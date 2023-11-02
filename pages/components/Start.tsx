@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 export default function NewStart () {
     return <div >
         <div className="main__wrapper">
@@ -9,7 +10,7 @@ export default function NewStart () {
                 <h1 className="matrix-selection-page_wrapper_h1">МАТРИЦІ ДОЛІ</h1>
                 <div className="buttons_wrapper">
                     <button className="btn btn-disabled">МАТРИЦЯ НА РІК</button>
-                    <a href="/Calculator" className="btn btn-primary">ОСОБИСТА МАТРИЦЯ</a>
+                    <Link href="/Calculator" className="btn btn-primary">ОСОБИСТА МАТРИЦЯ</Link>
                     <button className="btn btn-disabled">МАТРИЦЯ СУМІСНІСНОСТІ</button>
                 </div>
                 <div className="social-and-photo">
