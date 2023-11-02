@@ -1,9 +1,8 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-import Header from "@/pages/components/Header";
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html data-theme="light" lang="uk">
       <Head />
       <body>
         <Main />
