@@ -1,8 +1,9 @@
-import React, {Fragment, useState} from 'react';
-import DateMaskInput from '@/pages/components/DateMaskInput';
+import React, {Fragment, useState} from "react";
+import DateMaskInput from "@/pages/components/DateMaskInput";
 import Image from "next/image";
 import {Popover, Transition} from "@headlessui/react";
 import ButtonToInstagram from "@/pages/components/ButtonToInstagram";
+import Link from "next/link";
 export default function Calculator() {
     const [dayDateValue, setDayDateValue] = useState<number>(0);
     const [montDateValue, setMontDateValue] = useState<number>(0);
@@ -309,7 +310,7 @@ export default function Calculator() {
 
     return <div className={`App`}>
         <div className="p-2">
-            <a href="/" className="link link-hover">Головна</a>
+            <Link href="/" className="link link-hover">Головна</Link>
         </div>
         <div className={`block flex-1 border-0 bg-transparent py-1.5 pl-1  placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 user-form`}>
             <DateMaskInput  onDateChange={updateDateValues} minDate={new Date(1900, 0, 1)}
@@ -318,7 +319,7 @@ export default function Calculator() {
 
         <div className="section-with-diagram__top-content">
             <div className="section-with-diagram__col-with-table">
-                <div className="h5 section-with-diagram__table-title">Карта здоров'я</div>
+                <div className="h5 section-with-diagram__table-title">Карта здоров&apos;я</div>
                 <table className="section-with-diagram__table table health-table "><thead>
                 <tr>
                     <th scope="col"></th>
@@ -339,7 +340,7 @@ export default function Calculator() {
                                         <>
                                             <Popover.Button
                                                 className={`
-                ${open ? 'text-black' : 'text-black/90'}
+                ${open ? "text-black" : "text-black/90"}
                 group inline-flex items-center rounded-full text-xs border-black  border px-1 py-0  font-light hover:text-gray-500 hover:border-gray-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75`}
                                             >
                                                 <span>?</span>
@@ -383,7 +384,7 @@ export default function Calculator() {
                                         <>
                                             <Popover.Button
                                                 className={`
-                ${open ? 'text-black' : 'text-black/90'}
+                ${open ? "text-black" : "text-black/90"}
                 group inline-flex items-center rounded-full text-xs px-1 border-black  border  py-0  font-light hover:text-gray-500 hover:border-gray-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75`}
                                             >
                                                 <span>?</span>
@@ -427,7 +428,7 @@ export default function Calculator() {
                                         <>
                                             <Popover.Button
                                                 className={`
-                ${open ? 'text-black' : 'text-black/90'}
+                ${open ? "text-black" : "text-black/90"}
                 group inline-flex items-center rounded-full text-xs px-1 border-black  border py-0 font-light hover:text-gray-500 hover:border-gray-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75`}
                                             >
                                                 <span>?</span>
@@ -471,7 +472,7 @@ export default function Calculator() {
                                         <>
                                             <Popover.Button
                                                 className={`
-                ${open ? 'text-black' : 'text-black/90'}
+                ${open ? "text-black" : "text-black/90"}
                 group inline-flex items-center rounded-full text-xs px-1 border-black  border py-0 font-light hover:text-gray-500 hover:border-gray-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75`}
                                             >
                                                 <span>?</span>
@@ -516,7 +517,7 @@ export default function Calculator() {
                                         <>
                                             <Popover.Button
                                                 className={`
-                ${open ? 'text-black' : 'text-black/90'}
+                ${open ? "text-black" : "text-black/90"}
                 group inline-flex items-center rounded-full text-xs px-1 border-black  border py-0 font-light hover:text-gray-500 hover:border-gray-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75`}
                                             >
                                                 <span>?</span>
@@ -560,7 +561,7 @@ export default function Calculator() {
                                         <>
                                             <Popover.Button
                                                 className={`
-                ${open ? 'text-black' : 'text-black/90'}
+                ${open ? "text-black" : "text-black/90"}
                 group inline-flex items-center rounded-full text-xs px-1 border-black  border py-0 font-light hover:text-gray-500 hover:border-gray-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75`}
                                             >
                                                 <span>?</span>
@@ -605,7 +606,7 @@ export default function Calculator() {
                                         <>
                                             <Popover.Button
                                                 className={`
-                ${open ? 'text-black' : 'text-black/90'}
+                ${open ? "text-black" : "text-black/90"}
                 group inline-flex items-center rounded-full text-xs px-1 border-black  border py-0  font-light hover:text-gray-500 hover:border-gray-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75`}
                                             >
                                                 <span>?</span>
@@ -650,7 +651,7 @@ export default function Calculator() {
                                         <>
                                             <Popover.Button
                                                 className={`
-                ${open ? 'text-black' : 'text-black/90'}
+                ${open ? "text-black" : "text-black/90"}
                 group inline-flex items-center rounded-full text-xs px-1 border-black  border py-0 font-light hover:text-gray-500 hover:border-gray-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75`}
                                             >
                                                 <span>?</span>
