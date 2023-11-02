@@ -2,6 +2,7 @@ import React, {Fragment, useState} from 'react';
 import DateMaskInput from '@/pages/components/DateMaskInput';
 import Image from "next/image";
 import {Popover, Transition} from "@headlessui/react";
+import ButtonToInstagram from "@/pages/components/ButtonToInstagram";
 export default function Calculator() {
     const [dayDateValue, setDayDateValue] = useState<number>(0);
     const [montDateValue, setMontDateValue] = useState<number>(0);
@@ -691,7 +692,7 @@ export default function Calculator() {
                 <div className="section-with-diagram__matrix-diagram">
                     <div className="matrix-diagram">
                         <div className="matrix-diagram__svg">
-                            <Image src="/diagram.svg" alt={"diagram"}  className="img" height={872} width={872} />
+                            <Image src="/diagramFoWhite.svg" alt={"diagram"}  className="img" height={872} width={872} />
                         </div>
                         <div className="matrix-diagram__circle -size-lg -position-a -purple -active">{ bL ? a1 : null}</div>
                         <div className="matrix-diagram__circle -size-md -position-a2 -blue -active">{aL}</div>
@@ -857,6 +858,9 @@ export default function Calculator() {
                     </div>
                 </div>
             </div>
+        </div>
+        <div className=" flex justify-center items-center">
+            <ButtonToInstagram/>
         </div>
 
     </div>
