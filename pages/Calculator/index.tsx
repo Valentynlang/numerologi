@@ -42,7 +42,7 @@ export default function Calculator() {
         }
     };
 
-    const mDate =function () {
+    const mDate = function () {
         return montDateValue
     }
 
@@ -123,11 +123,11 @@ export default function Calculator() {
 
     const bT = template( bM , zk )
 
-    const kT = template( bM , gM )
+    const kT = template( vM , gM )
 
     const nT = template( kT , gM )
 
-    const oT = template( kT , bM )
+    const oT = template( kT , vM )
 
 ////////
 
@@ -308,18 +308,19 @@ export default function Calculator() {
 
 
 
-    return <div className={`App`}>
-        <div className="p-2">
-            <Link href="/" className="link link-hover">Головна</Link>
-        </div>
-        <div className={`block flex-1 border-0 bg-transparent py-1.5 pl-1  placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 user-form`}>
-            <DateMaskInput  onDateChange={updateDateValues} minDate={new Date(1900, 0, 1)}
-                            maxDate={new Date(2100, 12, 31)} />
+    return <div >
+        <div className=" App ">
+            <div className="pt-10">
+                <Link href="/" className="link text-lg">Головна</Link>
+            </div>
+            <div className={` block flex-1 border-0 bg-transparent pt-5 sm:text-sm sm:leading-6 user-form`}>
+                <DateMaskInput  onDateChange={updateDateValues} minDate={new Date(1900, 0, 1)} maxDate={new Date(2100, 12, 31)} />
+            </div>
         </div>
 
-        <div className="section-with-diagram__top-content">
-            <div className="section-with-diagram__col-with-table">
-                <div className="h5 section-with-diagram__table-title">Карта здоров&apos;я</div>
+        <div className="section-with-diagram__top-content ">
+            <div className="section-with-diagram__col-with-table  xl:ml-52 xl:mt-12">
+                <div className="h5 text-center text-lg sm:text-start font-medium section-with-diagram__table-title">Карта здоров&apos;я</div>
                 <table className="section-with-diagram__table table health-table "><thead>
                 <tr>
                     <th scope="col"></th>
@@ -689,7 +690,7 @@ export default function Calculator() {
                 </table>
 
             </div>
-            <div className="section-with-diagram__col-with-diagram">
+            <div className="section-with-diagram__col-with-diagram App">
                 <div className="section-with-diagram__matrix-diagram">
                     <div className="matrix-diagram">
                         <div className="matrix-diagram__svg">
@@ -785,7 +786,8 @@ export default function Calculator() {
                 </div>
             </div>
         </div>
-        <div className=" section-with-diagram__table-title ">Призначення</div>
+        <div className="App">
+        <div className=" section-with-diagram__table-title text-lg text-center sm:text-start font-medium ">Призначення</div>
         <div className="section-with-diagram__bottom-values-row row">
             <div className="col">
                 <div className="diagram-values-item">
@@ -860,9 +862,9 @@ export default function Calculator() {
                 </div>
             </div>
         </div>
-        <div className=" flex justify-center items-center">
+        <div className=" flex justify-center items-center pb-10">
             <ButtonToInstagram/>
         </div>
-
+        </div>
     </div>
 }
