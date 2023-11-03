@@ -33,7 +33,9 @@ export default function NewStart () {
                             </div>
                         </div>
                     </div>
+                    <div className="img-hero-wrapper">
                     <div className="img-hero"> </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1275,11 +1275,11 @@
     width: 100%;
     height: 10%;
 
-    .img-hero {
+    .img-hero-wrapper {
       position: relative;
       margin-right: -20px;
 
-      &::before {
+      .img-hero {
         width: 70vh;
         content: "";
         background-image: url('../public/hero-foto.png');
@@ -1370,12 +1370,12 @@
       height: 59%;
       position: relative;
 
-      .img-hero {
+      .img-hero-wrapper {
         position: relative;
         width: 1310px;
         margin-right: -20px;
 
-        &::before {
+        .img-hero {
           width: 370px;
           content: "";
           background-image: url('../public/hero-foto.png');
@@ -1446,8 +1446,8 @@
     justify-content: flex-end;
 
     .social-and-photo {
-      .img-hero {
-        &::before {
+      .img-hero-wrapper {
+        .img-hero {
           display: block;
           width: 380px;
           content: "";
@@ -1477,12 +1477,12 @@
       width: 100%;
       height: 59%;
 
-      .img-hero {
+      .img-hero-wrapper {
         position: relative;
         width: 1310px;
         margin-right: -20px;
 
-        &::before {
+        .img-hero {
           display: block;
           width: 340px;
           content: "";
