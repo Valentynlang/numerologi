@@ -310,8 +310,8 @@ export default function Calculator() {
 
     return <div >
         <div className=" App ">
-            <div className="pt-10">
-                <Link href="/" className="link text-lg">Головна</Link>
+            <div className="pt-8">
+                <Link href="/" className="link hover:op text-lg">Головна</Link>
             </div>
             <div className={` block flex-1 border-0 bg-transparent pt-5 sm:text-sm sm:leading-6 user-form`}>
                 <DateMaskInput  onDateChange={updateDateValues} minDate={new Date(1900, 0, 1)} maxDate={new Date(2100, 12, 31)} />
@@ -320,7 +320,7 @@ export default function Calculator() {
 
         <div className="section-with-diagram__top-content ">
             <div className="section-with-diagram__col-with-table  xl:ml-52 xl:mt-12">
-                <div className="h5 text-center text-lg sm:text-start font-medium section-with-diagram__table-title">Карта здоров&apos;я</div>
+                <div className="h5 text-center text-lg sm:pl-8 sm:text-start font-medium section-with-diagram__table-title">Карта здоров&apos;я</div>
                 <table className="section-with-diagram__table table health-table "><thead>
                 <tr>
                     <th scope="col"></th>
@@ -355,7 +355,7 @@ export default function Calculator() {
                                                 leaveFrom="opacity-100 translate-y-0"
                                                 leaveTo="opacity-0 translate-y-1"
                                             >
-                                                <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-32 sm:-translate-x-8  transform px-4 sm:px-0 ">
+                                                <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-[6.6rem] sm:-translate-x-8  transform px-4 sm:px-0 ">
                                                     <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
                                                         <div className=" bg-white p-7 ">
                                                             <p className="text-sm font-light text-gray-900">
@@ -399,7 +399,7 @@ export default function Calculator() {
                                                 leaveFrom="opacity-100 translate-y-0"
                                                 leaveTo="opacity-0 translate-y-1"
                                             >
-                                                <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-1/4 sm:-translate-x-8  transform px-4 sm:px-0 ">
+                                                <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-[4.8rem] sm:-translate-x-8  transform px-4 sm:px-0 ">
                                                     <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
                                                         <div className=" bg-white p-7 ">
                                                             <p className="text-sm font-light text-gray-900">
@@ -443,7 +443,7 @@ export default function Calculator() {
                                                 leaveFrom="opacity-100 translate-y-0"
                                                 leaveTo="opacity-0 translate-y-1"
                                             >
-                                                <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-28 sm:-translate-x-8  transform px-4 sm:px-0 ">
+                                                <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-[5.5rem] sm:-translate-x-8  transform px-4 sm:px-0 ">
                                                     <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
                                                         <div className=" bg-white p-7 ">
                                                             <p className="text-sm font-light text-gray-900">
@@ -487,7 +487,7 @@ export default function Calculator() {
                                                 leaveFrom="opacity-100 translate-y-0"
                                                 leaveTo="opacity-0 translate-y-1"
                                             >
-                                                <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-1/4 sm:-translate-x-8  transform px-4 sm:px-0 ">
+                                                <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-[5.5rem] sm:-translate-x-8  transform px-4 sm:px-0 ">
                                                     <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
                                                         <div className=" bg-white p-7 ">
                                                             <p className="text-sm font-light text-gray-900">
@@ -532,7 +532,7 @@ export default function Calculator() {
                                                 leaveFrom="opacity-100 translate-y-0"
                                                 leaveTo="opacity-0 translate-y-1"
                                             >
-                                                <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-32 sm:-translate-x-8  transform px-4 sm:px-0 ">
+                                                <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-[6rem] sm:-translate-x-8  transform px-4 sm:px-0 ">
                                                     <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
                                                         <div className=" bg-white p-7 ">
                                                             <p className="text-sm font-light text-gray-900">
@@ -576,7 +576,7 @@ export default function Calculator() {
                                                 leaveFrom="opacity-100 translate-y-0"
                                                 leaveTo="opacity-0 translate-y-1"
                                             >
-                                                <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-36 sm:-translate-x-8  transform px-4 sm:px-0 ">
+                                                <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-[7.2rem] sm:-translate-x-8  transform px-4 sm:px-0 ">
                                                     <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
                                                         <div className=" bg-white p-7 ">
                                                             <p className="text-sm font-light text-gray-900">
@@ -621,7 +621,7 @@ export default function Calculator() {
                                                 leaveFrom="opacity-100 translate-y-0"
                                                 leaveTo="opacity-0 translate-y-1"
                                             >
-                                                <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-32 sm:-translate-x-8  transform px-4 sm:px-0 ">
+                                                <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-[6.7rem] sm:-translate-x-8  transform px-4 sm:px-0 ">
                                                     <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
                                                         <div className=" bg-white p-7 ">
                                                             <p className="text-sm font-light text-gray-900">
@@ -666,7 +666,7 @@ export default function Calculator() {
                                                 leaveFrom="opacity-100 translate-y-0"
                                                 leaveTo="opacity-0 translate-y-1"
                                             >
-                                                <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-1/4 sm:-translate-x-8  transform px-4 sm:px-0 ">
+                                                <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-[6rem] sm:-translate-x-8  transform px-4 sm:px-0 ">
                                                     <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
                                                         <div className=" bg-white p-7 ">
                                                             <p className="text-sm font-light text-gray-900">
@@ -791,7 +791,7 @@ export default function Calculator() {
         <div className="section-with-diagram__bottom-values-row row">
             <div className="col">
                 <div className="diagram-values-item">
-                    <div className="h6 diagram-values-item__title">Особисте</div>
+                    <div className="h6 diagram-values-item__title">Особисте:</div>
                     <div className="diagram-values-item__description text-block">
                         <p>Створення відносин, народження дітей, формування необхідних якостей.</p>
                     </div>
@@ -812,7 +812,7 @@ export default function Calculator() {
             </div>
             <div className="col">
                 <div className="diagram-values-item">
-                    <div className="h6 diagram-values-item__title">Соціальне</div>
+                    <div className="h6 diagram-values-item__title">Соціальне:</div>
                     <div className="diagram-values-item__description text-block">
                         <p>У чому моя користь для людей? Пошук справи до душі.</p>
                     </div>
