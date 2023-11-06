@@ -319,377 +319,7 @@ export default function Calculator() {
         </div>
 
         <div className="section-with-diagram__top-content ">
-            <div className="section-with-diagram__col-with-table  xl:ml-52 xl:mt-12">
-                <div className="h5 text-center text-lg sm:pl-8 sm:text-start font-medium section-with-diagram__table-title">Карта здоров&apos;я</div>
-                <table className="section-with-diagram__table table health-table "><thead>
-                <tr>
-                    <th scope="col"></th>
-                    <th scope="col" className="h5 table-title-with-prompt">Назва Чакри</th>
-                    <th scope="col">Фізика</th>
-                    <th scope="col">Енергія</th>
-                    <th scope="col">Емоції</th>
-                </tr>
-                </thead>
-                    <tbody>
-                    <tr className="-purple-row" data-row-number="1">
-                        <th scope="row">1</th>
-                        <td>
-                            <div className="h5 table-title-with-prompt">
-                                <span className="table-title-with-prompt__text">Сахасрара</span>
-                                <Popover className="relative ml-1">
-                                    {({ open }) => (
-                                        <>
-                                            <Popover.Button
-                                                className={`
-                ${open ? "text-black" : "text-black/90"}
-                group inline-flex items-center rounded-full text-xs border-black  border px-1 py-0  font-light hover:text-gray-500 hover:border-gray-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75`}
-                                            >
-                                                <span>?</span>
-                                            </Popover.Button>
-                                            <Transition
-                                                as={Fragment}
-                                                enter="transition  ease-out duration-200"
-                                                enterFrom="opacity-0 translate-y-1"
-                                                enterTo="opacity-100 translate-y-0"
-                                                leave="transition ease-in duration-150"
-                                                leaveFrom="opacity-100 translate-y-0"
-                                                leaveTo="opacity-0 translate-y-1"
-                                            >
-                                                <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-[6.6rem] sm:-translate-x-8  transform px-4 sm:px-0 ">
-                                                    <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
-                                                        <div className=" bg-white p-7 ">
-                                                            <p className="text-sm font-light text-gray-900">
-                                                                Волося, мозок, верхня частина черепа.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </Popover.Panel>
-                                            </Transition>
-                                        </>
-                                    )}
-                                </Popover>
-                            </div>
-                            <div className="h6 table-sub-title">Покликання, призначення</div>
-                        </td>
-                        <td className="js-personal-calculation-item">{bL ? a1 : null}</td>
-                        <td className="js-personal-calculation-item">{bL ? b1 : null}</td>
-                        <td className="js-personal-calculation-item">{bL ? em1 : null}</td>
-                    </tr>
-                    <tr className="-blue-row" data-row-number="2">
-                        <th scope="row">2</th>
-                        <td>
-                            <div className="h5 table-title-with-prompt">
-                                <span className="table-title-with-prompt__text">Аджна</span>
-                                <Popover className="relative ml-1">
-                                    {({ open }) => (
-                                        <>
-                                            <Popover.Button
-                                                className={`
-                ${open ? "text-black" : "text-black/90"}
-                group inline-flex items-center rounded-full text-xs px-1 border-black  border  py-0  font-light hover:text-gray-500 hover:border-gray-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75`}
-                                            >
-                                                <span>?</span>
-                                            </Popover.Button>
-                                            <Transition
-                                                as={Fragment}
-                                                enter="transition  ease-out duration-200"
-                                                enterFrom="opacity-0 translate-y-1"
-                                                enterTo="opacity-100 translate-y-0"
-                                                leave="transition ease-in duration-150"
-                                                leaveFrom="opacity-100 translate-y-0"
-                                                leaveTo="opacity-0 translate-y-1"
-                                            >
-                                                <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-[4.8rem] sm:-translate-x-8  transform px-4 sm:px-0 ">
-                                                    <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
-                                                        <div className=" bg-white p-7 ">
-                                                            <p className="text-sm font-light text-gray-900">
-                                                                Очі, вуха, обличчя, щитовидка, плечі, руки.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </Popover.Panel>
-                                            </Transition>
-                                        </>
-                                    )}
-                                </Popover>
-                            </div>
-                            <div className="h6 table-sub-title">Цілостність, егрегори, соціалізація</div>
-                        </td>
-                        <td className="js-personal-calculation-item">{aL}</td>
-                        <td className="js-personal-calculation-item">{bL}</td>
-                        <td className="js-personal-calculation-item">{em2}</td>
-                    </tr>
-                    <tr className="-cyan-row" data-row-number="3">
-                        <th scope="row">3</th>
-                        <td>
-                            <div className="h5 table-title-with-prompt">
-                                <span className="table-title-with-prompt__text">Вішудха</span>
-                                <Popover className="relative ml-1">
-                                    {({ open }) => (
-                                        <>
-                                            <Popover.Button
-                                                className={`
-                ${open ? "text-black" : "text-black/90"}
-                group inline-flex items-center rounded-full text-xs px-1 border-black  border py-0 font-light hover:text-gray-500 hover:border-gray-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75`}
-                                            >
-                                                <span>?</span>
-                                            </Popover.Button>
-                                            <Transition
-                                                as={Fragment}
-                                                enter="transition  ease-out duration-200"
-                                                enterFrom="opacity-0 translate-y-1"
-                                                enterTo="opacity-100 translate-y-0"
-                                                leave="transition ease-in duration-150"
-                                                leaveFrom="opacity-100 translate-y-0"
-                                                leaveTo="opacity-0 translate-y-1"
-                                            >
-                                                <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-[5.5rem] sm:-translate-x-8  transform px-4 sm:px-0 ">
-                                                    <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
-                                                        <div className=" bg-white p-7 ">
-                                                            <p className="text-sm font-light text-gray-900">
-                                                                Горло, нижня щелепа, щитовидка, плечі, руки.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </Popover.Panel>
-                                            </Transition>
-                                        </>
-                                    )}
-                                </Popover>
-                            </div>
-                            <div className="h6 table-sub-title">Оцінка минулого, творчість, таланти</div>
-                        </td>
-                        <td className="js-personal-calculation-item">{aM}</td>
-                        <td className="js-personal-calculation-item">{bM}</td>
-                        <td className="js-personal-calculation-item">{em3}</td>
-                    </tr>
-                    <tr className="-green-row" data-row-number="4">
-                        <th scope="row">4</th>
-                        <td>
-                            <div className="h5 table-title-with-prompt">
-                                <span className="table-title-with-prompt__text">Анахата</span>
-                                <Popover className="relative ml-1">
-                                    {({ open }) => (
-                                        <>
-                                            <Popover.Button
-                                                className={`
-                ${open ? "text-black" : "text-black/90"}
-                group inline-flex items-center rounded-full text-xs px-1 border-black  border py-0 font-light hover:text-gray-500 hover:border-gray-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75`}
-                                            >
-                                                <span>?</span>
-                                            </Popover.Button>
-                                            <Transition
-                                                as={Fragment}
-                                                enter="transition  ease-out duration-200"
-                                                enterFrom="opacity-0 translate-y-1"
-                                                enterTo="opacity-100 translate-y-0"
-                                                leave="transition ease-in duration-150"
-                                                leaveFrom="opacity-100 translate-y-0"
-                                                leaveTo="opacity-0 translate-y-1"
-                                            >
-                                                <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-[5.5rem] sm:-translate-x-8  transform px-4 sm:px-0 ">
-                                                    <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
-                                                        <div className=" bg-white p-7 ">
-                                                            <p className="text-sm font-light text-gray-900">
-                                                                Серце, легені, бронхи, ребра, груди.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </Popover.Panel>
-                                            </Transition>
-                                        </>
-                                    )}
-                                </Popover>
-                            </div>
-                            <div className="h6 table-sub-title">Радість, стосунки, кохання</div>
-                        </td>
-                        <td className="js-personal-calculation-item">{aT}</td>
-                        <td className="js-personal-calculation-item">{bT}</td>
-                        <td className="js-personal-calculation-item">{em4}</td>
-                    </tr>
-                    <tr className="-yellow-row" data-row-number="5">
-                        <th scope="row">5</th>
-                        <td>
-                            <div className="h5 table-title-with-prompt">
-                                <span className="table-title-with-prompt__text">Маніпура</span>
-                                <i className="table-title-with-prompt__icon icomoon-prompt js-popover" data-content="Отвечает за состояние Середина позвоночника, ЖКТ, печень."></i>
-                                <Popover className="relative ml-1">
-                                    {({ open }) => (
-                                        <>
-                                            <Popover.Button
-                                                className={`
-                ${open ? "text-black" : "text-black/90"}
-                group inline-flex items-center rounded-full text-xs px-1 border-black  border py-0 font-light hover:text-gray-500 hover:border-gray-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75`}
-                                            >
-                                                <span>?</span>
-                                            </Popover.Button>
-                                            <Transition
-                                                as={Fragment}
-                                                enter="transition  ease-out duration-200"
-                                                enterFrom="opacity-0 translate-y-1"
-                                                enterTo="opacity-100 translate-y-0"
-                                                leave="transition ease-in duration-150"
-                                                leaveFrom="opacity-100 translate-y-0"
-                                                leaveTo="opacity-0 translate-y-1"
-                                            >
-                                                <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-[6rem] sm:-translate-x-8  transform px-4 sm:px-0 ">
-                                                    <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
-                                                        <div className=" bg-white p-7 ">
-                                                            <p className="text-sm font-light text-gray-900">
-                                                                Середина хребта, ШКТ, печінка.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </Popover.Panel>
-                                            </Transition>
-                                        </>
-                                    )}
-                                </Popover>
-                            </div>
-                            <div className="h6 table-sub-title">Сила волі, мотивація, статус</div>
-                        </td>
-                        <td className="js-personal-calculation-item">{zk}</td>
-                        <td className="js-personal-calculation-item">{zk}</td>
-                        <td className="js-personal-calculation-item">{em5}</td>
-                    </tr>
-                    <tr className="-orange-row" data-row-number="6">
-                        <th scope="row">6</th>
-                        <td>
-                            <div className="h5 table-title-with-prompt">
-                                <span className="table-title-with-prompt__text">Свадхістана</span>
-                                <Popover className="relative ml-1">
-                                    {({ open }) => (
-                                        <>
-                                            <Popover.Button
-                                                className={`
-                ${open ? "text-black" : "text-black/90"}
-                group inline-flex items-center rounded-full text-xs px-1 border-black  border py-0 font-light hover:text-gray-500 hover:border-gray-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75`}
-                                            >
-                                                <span>?</span>
-                                            </Popover.Button>
-                                            <Transition
-                                                as={Fragment}
-                                                enter="transition  ease-out duration-200"
-                                                enterFrom="opacity-0 translate-y-1"
-                                                enterTo="opacity-100 translate-y-0"
-                                                leave="transition ease-in duration-150"
-                                                leaveFrom="opacity-100 translate-y-0"
-                                                leaveTo="opacity-0 translate-y-1"
-                                            >
-                                                <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-[7.2rem] sm:-translate-x-8  transform px-4 sm:px-0 ">
-                                                    <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
-                                                        <div className=" bg-white p-7 ">
-                                                            <p className="text-sm font-light text-gray-900">
-                                                                Нирки, товстий кишечник, надниркові залози, статеві органи.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </Popover.Panel>
-                                            </Transition>
-                                        </>
-                                    )}
-                                </Popover>
-                            </div>
-                            <div className="h6 table-sub-title">Дитинство, емоційність, насолода</div>
-                        </td>
-                        <td className="js-personal-calculation-item">{vM}</td>
-                        <td className="js-personal-calculation-item">{gM}</td>
-                        <td className="js-personal-calculation-item">{em6}</td>
-                    </tr>
-                    <tr className="-red-row" data-row-number="7">
-                        <th scope="row">7</th>
-                        <td>
-                            <div className="h5 table-title-with-prompt">
-                                <span className="table-title-with-prompt__text">Муладхара</span>
-                                <i className="table-title-with-prompt__icon icomoon-prompt js-popover" data-content="Отвечает за состояние Ноги, анус, крестец, мочеполовая система."></i>
-                                <Popover className="relative ml-1">
-                                    {({ open }) => (
-                                        <>
-                                            <Popover.Button
-                                                className={`
-                ${open ? "text-black" : "text-black/90"}
-                group inline-flex items-center rounded-full text-xs px-1 border-black  border py-0  font-light hover:text-gray-500 hover:border-gray-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75`}
-                                            >
-                                                <span>?</span>
-                                            </Popover.Button>
-                                            <Transition
-                                                as={Fragment}
-                                                enter="transition  ease-out duration-200"
-                                                enterFrom="opacity-0 translate-y-1"
-                                                enterTo="opacity-100 translate-y-0"
-                                                leave="transition ease-in duration-150"
-                                                leaveFrom="opacity-100 translate-y-0"
-                                                leaveTo="opacity-0 translate-y-1"
-                                            >
-                                                <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-[6.7rem] sm:-translate-x-8  transform px-4 sm:px-0 ">
-                                                    <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
-                                                        <div className=" bg-white p-7 ">
-                                                            <p className="text-sm font-light text-gray-900">
-                                                                Ноги, анус, криж, сечостатева система.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </Popover.Panel>
-                                            </Transition>
-                                        </>
-                                    )}
-                                </Popover>
-                            </div>
-                            <div className="h6 table-sub-title">Здорове тіло, матерія</div>
-                        </td>
-                        <td className="js-personal-calculation-item">{v1}</td>
-                        <td className="js-personal-calculation-item">{g1}</td>
-                        <td className="js-personal-calculation-item">{em7}</td>
-                    </tr>
-                    <tr className="-grey-row" data-row-number="8">
-                        <th scope="row">8</th>
-                        <td>
-                            <div className="h5 table-title-with-prompt">
-                                <span className="table-title-with-prompt__text">Підсумок</span>
-                                <i className="table-title-with-prompt__icon icomoon-prompt js-popover" data-content="Сиситемы: Костная, лимфатическая, кровеносная. Лишний вес."></i>
-                                <Popover className="relative ml-1">
-                                    {({ open }) => (
-                                        <>
-                                            <Popover.Button
-                                                className={`
-                ${open ? "text-black" : "text-black/90"}
-                group inline-flex items-center rounded-full text-xs px-1 border-black  border py-0 font-light hover:text-gray-500 hover:border-gray-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75`}
-                                            >
-                                                <span>?</span>
-                                            </Popover.Button>
-                                            <Transition
-                                                as={Fragment}
-                                                enter="transition  ease-out duration-200"
-                                                enterFrom="opacity-0 translate-y-1"
-                                                enterTo="opacity-100 translate-y-0"
-                                                leave="transition ease-in duration-150"
-                                                leaveFrom="opacity-100 translate-y-0"
-                                                leaveTo="opacity-0 translate-y-1"
-                                            >
-                                                <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-[6rem] sm:-translate-x-8  transform px-4 sm:px-0 ">
-                                                    <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
-                                                        <div className=" bg-white p-7 ">
-                                                            <p className="text-sm font-light text-gray-900">
-                                                                Система: кісткова, лімфатична, кровоносна. Зайва вага
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </Popover.Panel>
-                                            </Transition>
-                                        </>
-                                    )}
-                                </Popover>
-                            </div>
-                            <div className="h6 table-sub-title">Загальне енергополе</div>
-                        </td>
-                        <td className="js-personal-calculation-item">{physics}</td>
-                        <td className="js-personal-calculation-item">{energy}</td>
-                        <td className="js-personal-calculation-item">{emotions}</td>
-                    </tr>
-                    </tbody>
-                </table>
 
-            </div>
             <div className="section-with-diagram__col-with-diagram App">
                 <div className="section-with-diagram__matrix-diagram">
                     <div className="matrix-diagram">
@@ -787,84 +417,457 @@ export default function Calculator() {
             </div>
         </div>
         <div className="App">
-        <div className=" section-with-diagram__table-title text-lg text-center sm:text-start font-medium ">Призначення</div>
-        <div className="section-with-diagram__bottom-values-row row">
-            <div className="col">
-                <div className="diagram-values-item">
-                    <div className="h6 diagram-values-item__title">Особисте:</div>
-                    <div className="diagram-values-item__description text-block">
-                        <p>Створення відносин, народження дітей, формування необхідних якостей.</p>
-                    </div>
-                    <div className="small-diagram-values">
-                        <div className="small-diagram-values__titles-block">
-                            <div className="h6 small-diagram-values__title">Небо</div>
-                            <div className="h6 small-diagram-values__title">Земля</div>
-                        </div><div className="small-diagram-values__values-block">
-                        <div className="small-diagram-values__path-img">
-                            <Image height={48} width={38} src="/together-line.svg" alt="route"/>
+            <div className=" section-with-diagram__table-title text-lg text-center sm:text-start font-medium ">Призначення</div>
+            <div className="section-with-diagram__bottom-values-row row">
+                <div className="col">
+                    <div className="diagram-values-item">
+                        <div className="h6 diagram-values-item__title">Особисте:</div>
+                        <div className="diagram-values-item__description text-block">
+                            <p>Створення відносин, народження дітей, формування необхідних якостей.</p>
                         </div>
-                        <div className="small-diagram-values__value js-personal-calculation-item -top-left diagram-value -active">{sky}</div>
-                        <div className="small-diagram-values__value js-personal-calculation-item -bottom-left diagram-value -active">{ground}</div>
-                        <div className="small-diagram-values__value js-personal-calculation-item -center diagram-value -active">{sG}</div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <div className="col">
-                <div className="diagram-values-item">
-                    <div className="h6 diagram-values-item__title">Соціальне:</div>
-                    <div className="diagram-values-item__description text-block">
-                        <p>У чому моя користь для людей? Пошук справи до душі.</p>
-                    </div>
-                    <div className="small-diagram-values">
-                        <div className="small-diagram-values__titles-block">
-                            <div className="h6 small-diagram-values__title">Чол</div>
-                            <div className="h6 small-diagram-values__title">Жін</div>
-                        </div><div className="small-diagram-values__values-block">
-                        <div className="small-diagram-values__path-img">
-                            <Image height={48} width={38} src="/together-line.svg" alt="route"/>
+                        <div className="small-diagram-values">
+                            <div className="small-diagram-values__titles-block">
+                                <div className="h6 small-diagram-values__title">Небо</div>
+                                <div className="h6 small-diagram-values__title">Земля</div>
+                            </div><div className="small-diagram-values__values-block">
+                            <div className="small-diagram-values__path-img">
+                                <Image height={48} width={38} src="/together-line.svg" alt="route"/>
+                            </div>
+                            <div className="small-diagram-values__value js-personal-calculation-item -top-left diagram-value -active">{sky}</div>
+                            <div className="small-diagram-values__value js-personal-calculation-item -bottom-left diagram-value -active">{ground}</div>
+                            <div className="small-diagram-values__value js-personal-calculation-item -center diagram-value -active">{sG}</div>
                         </div>
-                        <div className="small-diagram-values__value js-personal-calculation-item -top-left diagram-value -active">{man}</div>
-                        <div className="small-diagram-values__value js-personal-calculation-item -bottom-left diagram-value -active">{woman}</div>
-                        <div className="small-diagram-values__value js-personal-calculation-item -center diagram-value -active">{mW}</div>
+                        </div>
                     </div>
+                </div>
+                <div className="col">
+                    <div className="diagram-values-item">
+                        <div className="h6 diagram-values-item__title">Соціальне:</div>
+                        <div className="diagram-values-item__description text-block">
+                            <p>У чому моя користь для людей? Пошук справи до душі.</p>
+                        </div>
+                        <div className="small-diagram-values sm:pt-0 pt-10">
+                            <div className="small-diagram-values__titles-block">
+                                <div className="h6 small-diagram-values__title">Чол</div>
+                                <div className="h6 small-diagram-values__title">Жін</div>
+                            </div><div className="small-diagram-values__values-block">
+                            <div className="small-diagram-values__path-img">
+                                <Image height={48} width={38} src="/together-line.svg" alt="route"/>
+                            </div>
+                            <div className="small-diagram-values__value js-personal-calculation-item -top-left diagram-value -active">{man}</div>
+                            <div className="small-diagram-values__value js-personal-calculation-item -bottom-left diagram-value -active">{woman}</div>
+                            <div className="small-diagram-values__value js-personal-calculation-item -center diagram-value -active">{mW}</div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="col">
+                    <div className="diagram-values-item">
+                        <div className="h6 diagram-values-item__title">Духовне:</div>
+                        <div className="diagram-values-item__description text-block">
+                            <p>Через що мій шлях до бога?<br/> Де бог у мені?</p>
+                        </div>
+                        <div className="small-diagram-values">
+                            <div className="diagram-value js-personal-calculation-item -active">{spirit}</div>
+                        </div>
+                    </div>
+                </div>
+                <div className="col">
+                    <div className="diagram-values-item">
+                        <div className="h6 diagram-values-item__title">Планетарне:</div>
+                        <div className="diagram-values-item__description text-block">
+                            <p>Чим я можу бути корисним для своєї планети?</p>
+                        </div>
+                        <div className="small-diagram-values">
+                            <div className="diagram-value js-personal-calculation-item -active">{planetary}</div>
+                        </div>
+                    </div>
+                </div>
+                <div className="col">
+                    <div className="diagram-values-item">
+                        <div className="h6 diagram-values-item__title">Родова сила:</div>
+                        <div className="small-diagram-values">
+                            <div className="diagram-value js-personal-calculation-item -active">{power}</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div className="col">
-                <div className="diagram-values-item">
-                    <div className="h6 diagram-values-item__title">Духовне:</div>
-                    <div className="diagram-values-item__description text-block">
-                        <p>Через що мій шлях до бога?<br/> Де бог у мені?</p>
-                    </div>
-                    <div className="small-diagram-values">
-                        <div className="diagram-value js-personal-calculation-item -active">{spirit}</div>
-                    </div>
-                </div>
-            </div>
-            <div className="col">
-                <div className="diagram-values-item">
-                    <div className="h6 diagram-values-item__title">Планетарне:</div>
-                    <div className="diagram-values-item__description text-block">
-                        <p>Чим я можу бути корисним для своєї планети?</p>
-                    </div>
-                    <div className="small-diagram-values">
-                        <div className="diagram-value js-personal-calculation-item -active">{planetary}</div>
-                    </div>
-                </div>
-            </div>
-            <div className="col">
-                <div className="diagram-values-item">
-                    <div className="h6 diagram-values-item__title">Родова сила:</div>
-                    <div className="small-diagram-values">
-                        <div className="diagram-value js-personal-calculation-item -active">{power}</div>
-                    </div>
-                </div>
-            </div>
+
         </div>
-        <div className=" flex justify-center items-center pb-10">
-            <ButtonToInstagram/>
+        <div className="section-with-diagram__col-with-table ">
+            <div className=" pb-2 text-center text-lg   font-medium section-with-diagram__table-title">Карта здоров&apos;я</div>
+            <table className="section-with-diagram__table table health-table "><thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col" className="h5 table-title-with-prompt">Назва Чакри</th>
+                <th scope="col">Фізика</th>
+                <th scope="col">Енергія</th>
+                <th scope="col">Емоції</th>
+            </tr>
+            </thead>
+                <tbody>
+                <tr className="-purple-row" data-row-number="1">
+                    <th scope="row">1</th>
+                    <td>
+                        <div className="h5 table-title-with-prompt">
+                            <span className="table-title-with-prompt__text">Сахасрара</span>
+                            <Popover className="relative ml-1">
+                                {({ open }) => (
+                                    <>
+                                        <Popover.Button
+                                            className={`
+                ${open ? "text-black" : "text-black/90"}
+                group inline-flex items-center rounded-full text-xs border-black  border px-1 py-0  font-light hover:text-gray-500 hover:border-gray-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75`}
+                                        >
+                                            <span>?</span>
+                                        </Popover.Button>
+                                        <Transition
+                                            as={Fragment}
+                                            enter="transition  ease-out duration-200"
+                                            enterFrom="opacity-0 translate-y-1"
+                                            enterTo="opacity-100 translate-y-0"
+                                            leave="transition ease-in duration-150"
+                                            leaveFrom="opacity-100 translate-y-0"
+                                            leaveTo="opacity-0 translate-y-1"
+                                        >
+                                            <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-[6.6rem] sm:-translate-x-8  transform px-4 sm:px-0 ">
+                                                <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
+                                                    <div className=" bg-white p-7 ">
+                                                        <p className="text-sm font-light text-gray-900">
+                                                            Волося, мозок, верхня частина черепа.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </Popover.Panel>
+                                        </Transition>
+                                    </>
+                                )}
+                            </Popover>
+                        </div>
+                        <div className="h6 table-sub-title">Покликання, призначення</div>
+                    </td>
+                    <td className="js-personal-calculation-item">{bL ? a1 : null}</td>
+                    <td className="js-personal-calculation-item">{bL ? b1 : null}</td>
+                    <td className="js-personal-calculation-item">{bL ? em1 : null}</td>
+                </tr>
+                <tr className="-blue-row" data-row-number="2">
+                    <th scope="row">2</th>
+                    <td>
+                        <div className="h5 table-title-with-prompt">
+                            <span className="table-title-with-prompt__text">Аджна</span>
+                            <Popover className="relative ml-1">
+                                {({ open }) => (
+                                    <>
+                                        <Popover.Button
+                                            className={`
+                ${open ? "text-black" : "text-black/90"}
+                group inline-flex items-center rounded-full text-xs px-1 border-black  border  py-0  font-light hover:text-gray-500 hover:border-gray-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75`}
+                                        >
+                                            <span>?</span>
+                                        </Popover.Button>
+                                        <Transition
+                                            as={Fragment}
+                                            enter="transition  ease-out duration-200"
+                                            enterFrom="opacity-0 translate-y-1"
+                                            enterTo="opacity-100 translate-y-0"
+                                            leave="transition ease-in duration-150"
+                                            leaveFrom="opacity-100 translate-y-0"
+                                            leaveTo="opacity-0 translate-y-1"
+                                        >
+                                            <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-[4.8rem] sm:-translate-x-8  transform px-4 sm:px-0 ">
+                                                <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
+                                                    <div className=" bg-white p-7 ">
+                                                        <p className="text-sm font-light text-gray-900">
+                                                            Очі, вуха, обличчя, щитовидка, плечі, руки.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </Popover.Panel>
+                                        </Transition>
+                                    </>
+                                )}
+                            </Popover>
+                        </div>
+                        <div className="h6 table-sub-title">Цілостність, егрегори, соціалізація</div>
+                    </td>
+                    <td className="js-personal-calculation-item">{aL}</td>
+                    <td className="js-personal-calculation-item">{bL}</td>
+                    <td className="js-personal-calculation-item">{em2}</td>
+                </tr>
+                <tr className="-cyan-row" data-row-number="3">
+                    <th scope="row">3</th>
+                    <td>
+                        <div className="h5 table-title-with-prompt">
+                            <span className="table-title-with-prompt__text">Вішудха</span>
+                            <Popover className="relative ml-1">
+                                {({ open }) => (
+                                    <>
+                                        <Popover.Button
+                                            className={`
+                ${open ? "text-black" : "text-black/90"}
+                group inline-flex items-center rounded-full text-xs px-1 border-black  border py-0 font-light hover:text-gray-500 hover:border-gray-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75`}
+                                        >
+                                            <span>?</span>
+                                        </Popover.Button>
+                                        <Transition
+                                            as={Fragment}
+                                            enter="transition  ease-out duration-200"
+                                            enterFrom="opacity-0 translate-y-1"
+                                            enterTo="opacity-100 translate-y-0"
+                                            leave="transition ease-in duration-150"
+                                            leaveFrom="opacity-100 translate-y-0"
+                                            leaveTo="opacity-0 translate-y-1"
+                                        >
+                                            <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-[5.5rem] sm:-translate-x-8  transform px-4 sm:px-0 ">
+                                                <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
+                                                    <div className=" bg-white p-7 ">
+                                                        <p className="text-sm font-light text-gray-900">
+                                                            Горло, нижня щелепа, щитовидка, плечі, руки.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </Popover.Panel>
+                                        </Transition>
+                                    </>
+                                )}
+                            </Popover>
+                        </div>
+                        <div className="h6 table-sub-title">Оцінка минулого, творчість, таланти</div>
+                    </td>
+                    <td className="js-personal-calculation-item">{aM}</td>
+                    <td className="js-personal-calculation-item">{bM}</td>
+                    <td className="js-personal-calculation-item">{em3}</td>
+                </tr>
+                <tr className="-green-row" data-row-number="4">
+                    <th scope="row">4</th>
+                    <td>
+                        <div className="h5 table-title-with-prompt">
+                            <span className="table-title-with-prompt__text">Анахата</span>
+                            <Popover className="relative ml-1">
+                                {({ open }) => (
+                                    <>
+                                        <Popover.Button
+                                            className={`
+                ${open ? "text-black" : "text-black/90"}
+                group inline-flex items-center rounded-full text-xs px-1 border-black  border py-0 font-light hover:text-gray-500 hover:border-gray-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75`}
+                                        >
+                                            <span>?</span>
+                                        </Popover.Button>
+                                        <Transition
+                                            as={Fragment}
+                                            enter="transition  ease-out duration-200"
+                                            enterFrom="opacity-0 translate-y-1"
+                                            enterTo="opacity-100 translate-y-0"
+                                            leave="transition ease-in duration-150"
+                                            leaveFrom="opacity-100 translate-y-0"
+                                            leaveTo="opacity-0 translate-y-1"
+                                        >
+                                            <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-[5.5rem] sm:-translate-x-8  transform px-4 sm:px-0 ">
+                                                <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
+                                                    <div className=" bg-white p-7 ">
+                                                        <p className="text-sm font-light text-gray-900">
+                                                            Серце, легені, бронхи, ребра, груди.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </Popover.Panel>
+                                        </Transition>
+                                    </>
+                                )}
+                            </Popover>
+                        </div>
+                        <div className="h6 table-sub-title">Радість, стосунки, кохання</div>
+                    </td>
+                    <td className="js-personal-calculation-item">{aT}</td>
+                    <td className="js-personal-calculation-item">{bT}</td>
+                    <td className="js-personal-calculation-item">{em4}</td>
+                </tr>
+                <tr className="-yellow-row" data-row-number="5">
+                    <th scope="row">5</th>
+                    <td>
+                        <div className="h5 table-title-with-prompt">
+                            <span className="table-title-with-prompt__text">Маніпура</span>
+                            <i className="table-title-with-prompt__icon icomoon-prompt js-popover" data-content="Отвечает за состояние Середина позвоночника, ЖКТ, печень."></i>
+                            <Popover className="relative ml-1">
+                                {({ open }) => (
+                                    <>
+                                        <Popover.Button
+                                            className={`
+                ${open ? "text-black" : "text-black/90"}
+                group inline-flex items-center rounded-full text-xs px-1 border-black  border py-0 font-light hover:text-gray-500 hover:border-gray-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75`}
+                                        >
+                                            <span>?</span>
+                                        </Popover.Button>
+                                        <Transition
+                                            as={Fragment}
+                                            enter="transition  ease-out duration-200"
+                                            enterFrom="opacity-0 translate-y-1"
+                                            enterTo="opacity-100 translate-y-0"
+                                            leave="transition ease-in duration-150"
+                                            leaveFrom="opacity-100 translate-y-0"
+                                            leaveTo="opacity-0 translate-y-1"
+                                        >
+                                            <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-[6rem] sm:-translate-x-8  transform px-4 sm:px-0 ">
+                                                <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
+                                                    <div className=" bg-white p-7 ">
+                                                        <p className="text-sm font-light text-gray-900">
+                                                            Середина хребта, ШКТ, печінка.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </Popover.Panel>
+                                        </Transition>
+                                    </>
+                                )}
+                            </Popover>
+                        </div>
+                        <div className="h6 table-sub-title">Сила волі, мотивація, статус</div>
+                    </td>
+                    <td className="js-personal-calculation-item">{zk}</td>
+                    <td className="js-personal-calculation-item">{zk}</td>
+                    <td className="js-personal-calculation-item">{em5}</td>
+                </tr>
+                <tr className="-orange-row" data-row-number="6">
+                    <th scope="row">6</th>
+                    <td>
+                        <div className="h5 table-title-with-prompt">
+                            <span className="table-title-with-prompt__text">Свадхістана</span>
+                            <Popover className="relative ml-1">
+                                {({ open }) => (
+                                    <>
+                                        <Popover.Button
+                                            className={`
+                ${open ? "text-black" : "text-black/90"}
+                group inline-flex items-center rounded-full text-xs px-1 border-black  border py-0 font-light hover:text-gray-500 hover:border-gray-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75`}
+                                        >
+                                            <span>?</span>
+                                        </Popover.Button>
+                                        <Transition
+                                            as={Fragment}
+                                            enter="transition  ease-out duration-200"
+                                            enterFrom="opacity-0 translate-y-1"
+                                            enterTo="opacity-100 translate-y-0"
+                                            leave="transition ease-in duration-150"
+                                            leaveFrom="opacity-100 translate-y-0"
+                                            leaveTo="opacity-0 translate-y-1"
+                                        >
+                                            <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-[7.2rem] sm:-translate-x-8  transform px-4 sm:px-0 ">
+                                                <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
+                                                    <div className=" bg-white p-7 ">
+                                                        <p className="text-sm font-light text-gray-900">
+                                                            Нирки, товстий кишечник, надниркові залози, статеві органи.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </Popover.Panel>
+                                        </Transition>
+                                    </>
+                                )}
+                            </Popover>
+                        </div>
+                        <div className="h6 table-sub-title">Дитинство, емоційність, насолода</div>
+                    </td>
+                    <td className="js-personal-calculation-item">{vM}</td>
+                    <td className="js-personal-calculation-item">{gM}</td>
+                    <td className="js-personal-calculation-item">{em6}</td>
+                </tr>
+                <tr className="-red-row" data-row-number="7">
+                    <th scope="row">7</th>
+                    <td>
+                        <div className="h5 table-title-with-prompt">
+                            <span className="table-title-with-prompt__text">Муладхара</span>
+                            <i className="table-title-with-prompt__icon icomoon-prompt js-popover" data-content="Отвечает за состояние Ноги, анус, крестец, мочеполовая система."></i>
+                            <Popover className="relative ml-1">
+                                {({ open }) => (
+                                    <>
+                                        <Popover.Button
+                                            className={`
+                ${open ? "text-black" : "text-black/90"}
+                group inline-flex items-center rounded-full text-xs px-1 border-black  border py-0  font-light hover:text-gray-500 hover:border-gray-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75`}
+                                        >
+                                            <span>?</span>
+                                        </Popover.Button>
+                                        <Transition
+                                            as={Fragment}
+                                            enter="transition  ease-out duration-200"
+                                            enterFrom="opacity-0 translate-y-1"
+                                            enterTo="opacity-100 translate-y-0"
+                                            leave="transition ease-in duration-150"
+                                            leaveFrom="opacity-100 translate-y-0"
+                                            leaveTo="opacity-0 translate-y-1"
+                                        >
+                                            <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-[6.7rem] sm:-translate-x-8  transform px-4 sm:px-0 ">
+                                                <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
+                                                    <div className=" bg-white p-7 ">
+                                                        <p className="text-sm font-light text-gray-900">
+                                                            Ноги, анус, криж, сечостатева система.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </Popover.Panel>
+                                        </Transition>
+                                    </>
+                                )}
+                            </Popover>
+                        </div>
+                        <div className="h6 table-sub-title">Здорове тіло, матерія</div>
+                    </td>
+                    <td className="js-personal-calculation-item">{v1}</td>
+                    <td className="js-personal-calculation-item">{g1}</td>
+                    <td className="js-personal-calculation-item">{em7}</td>
+                </tr>
+                <tr className="-grey-row" data-row-number="8">
+                    <th scope="row">8</th>
+                    <td>
+                        <div className="h5 table-title-with-prompt">
+                            <span className="table-title-with-prompt__text">Підсумок</span>
+                            <i className="table-title-with-prompt__icon icomoon-prompt js-popover" data-content="Сиситемы: Костная, лимфатическая, кровеносная. Лишний вес."></i>
+                            <Popover className="relative ml-1">
+                                {({ open }) => (
+                                    <>
+                                        <Popover.Button
+                                            className={`
+                ${open ? "text-black" : "text-black/90"}
+                group inline-flex items-center rounded-full text-xs px-1 border-black  border py-0 font-light hover:text-gray-500 hover:border-gray-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75`}
+                                        >
+                                            <span>?</span>
+                                        </Popover.Button>
+                                        <Transition
+                                            as={Fragment}
+                                            enter="transition  ease-out duration-200"
+                                            enterFrom="opacity-0 translate-y-1"
+                                            enterTo="opacity-100 translate-y-0"
+                                            leave="transition ease-in duration-150"
+                                            leaveFrom="opacity-100 translate-y-0"
+                                            leaveTo="opacity-0 translate-y-1"
+                                        >
+                                            <Popover.Panel className="absolute left-1/3 z-10 mt-1 w-screen max-w-sm -translate-x-[6rem] sm:-translate-x-8  transform px-4 sm:px-0 ">
+                                                <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
+                                                    <div className=" bg-white p-7 ">
+                                                        <p className="text-sm font-light text-gray-900">
+                                                            Система: кісткова, лімфатична, кровоносна. Зайва вага
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </Popover.Panel>
+                                        </Transition>
+                                    </>
+                                )}
+                            </Popover>
+                        </div>
+                        <div className="h6 table-sub-title">Загальне енергополе</div>
+                    </td>
+                    <td className="js-personal-calculation-item">{physics}</td>
+                    <td className="js-personal-calculation-item">{energy}</td>
+                    <td className="js-personal-calculation-item">{emotions}</td>
+                </tr>
+                </tbody>
+            </table>
+            <div className=" flex justify-center items-center pt-5 pb-10">
+                <ButtonToInstagram/>
+            </div>
+
         </div>
-        </div>
+
     </div>
 }
